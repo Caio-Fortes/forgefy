@@ -1,0 +1,34 @@
+@use '@/scss/_mixins';
+
+// importa direto do Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+// Mixins
+@mixin set-inter-extra-bold { font-family: "Inter", sans-serif; font-weight: 800; }
+@mixin set-inter-bold       { font-family: "Inter", sans-serif; font-weight: 700; }
+@mixin set-inter-semibold   { font-family: "Inter", sans-serif; font-weight: 600; }
+@mixin set-inter-regular    { font-family: "Inter", sans-serif; font-weight: 400; }
+@mixin set-inter-medium     { font-family: "Inter", sans-serif; font-weight: 500; }
+
+// Classes utilitárias
+.inter-extra-bold { @include set-inter-extra-bold; }
+.inter-bold       { @include set-inter-bold; }
+.inter-semibold   { @include set-inter-semibold; }
+.inter-regular    { @include set-inter-regular; }
+.inter-medium     { @include set-inter-medium; }
+
+// Pesos genéricos
+.font-wt-0 { font-weight: 100; }
+.font-wt-1 { font-weight: 200; }
+.font-wt-2 { font-weight: 400; }
+.font-wt-3 { font-weight: 600; }
+.font-wt-4 { font-weight: 700; }
+
+// Tamanhos
+.font-size-0 { font-size: 0.65rem; }
+.font-size-1 { font-size: 0.875rem; }
+.font-size-2 { font-size: 1rem; }
+.font-size-3 { font-size: 1.25rem; }
+.font-size-4 { font-size: 1.5rem; }
+.font-size-5 { font-size: 2rem; }
+.font-size-6 { font-size: 3rem; }

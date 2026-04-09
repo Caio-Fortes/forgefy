@@ -1,0 +1,126 @@
+@use '@/scss/colors' as *;
+@use '@/scss/typography' as *;
+@use '@/scss/mixins' as *;
+
+body {
+  scroll-behavior: smooth;
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  transition: all 0.5s ease;
+
+  ul, ol {
+    margin: 0 ;
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    list-style-type: none;
+    margin: 0;
+  }
+
+  a {
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    @include set-inter-regular;
+    @include set-color-light-grey;
+  }
+
+  a:hover {
+    visibility: visible;
+    transform: scaleX(1);
+    @include set-color-light-green;
+    cursor: pointer;
+  }
+
+  a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.2s ease-in-out;
+  }
+
+  a:hover::after {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  hr {
+    border-color: #8080801a;
+  }
+
+  h1 {
+    margin: 0.2rem;
+    @include responsive-font(2vw, 2.4vw);
+    @include set-inter-bold;
+    @include set-color-white;
+    z-index: 1;
+  }
+
+  h4 {
+    line-height: 1.5;
+    font-weight: 400;
+    margin: 0.2rem;
+    @include responsive-font(1.3vw, 1.4vw);
+    @include set-inter-regular;
+    @include set-color-light-green;
+  }
+
+  h2, h3, h5 {
+    @include set-inter-bold;
+    @include set-color-white;
+  }
+
+  p {
+    @include set-color-grey;
+    @include set-inter-medium;
+    font-size: 1.5vw;
+    line-height: 1.5;
+  }
+
+  #ButtonCards {
+    width: 12vw;
+    border-radius: 1rem;
+    border-style: none;
+  }
+}
+
+// Espaçamento bordas
+
+@mixin set-space-body($space-body) {
+  padding: 0 $space-body;
+}
+
+.box {
+  @include set-space-body(8rem);
+
+  @include respond-to(lg) {
+    @include set-space-body(4rem);
+  }
+
+  @include respond-to(md) {
+    @include set-space-body(3rem);
+  }
+
+  @include respond-to(sm) {
+    @include set-space-body(1rem);
+  }
+}

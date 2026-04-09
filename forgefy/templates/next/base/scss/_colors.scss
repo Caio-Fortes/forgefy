@@ -1,0 +1,59 @@
+@use '@/scss/_mixins';
+
+$light-green: #8DE42B;
+$black-green: #2C4511;
+$black: rgb(0, 0, 0);
+
+// Cores secundárias
+$white: #FFFFFF;
+$light-grey: #F8F8F8;
+$grey: #B6B6B6;
+$lighter-black: #1E1F268C;
+$row: #7a77778c;
+
+// Mixins
+
+// Cores primárias
+@mixin set-color-light-green { color: $light-green; }
+@mixin set-background-light-green { background-color: $light-green; }
+
+@mixin set-color-black-green { color: $black-green; }
+@mixin set-background-black-green { background-color: $black-green; }
+
+@mixin set-color-black { color: $black; }
+@mixin set-background-black { background-color: $black; }
+
+// Cores secundárias
+@mixin set-color-white { color: $white; }
+@mixin set-background-white { background-color: $white; }
+
+@mixin set-color-light-grey { color: $light-grey; }
+@mixin set-background-light-grey { background-color: $light-grey; }
+
+@mixin set-color-grey { color: $grey; }
+@mixin set-background-grey { background-color: $grey; }
+
+@mixin set-color-lighter-black { color: $lighter-black; }
+@mixin set-background-lighter-black { background-color: $lighter-black; }
+
+// Classes utilitárias
+.color-light-green   { @include set-color-light-green; }
+.background-light-green { @include set-background-light-green; }
+
+.color-black-green   { @include set-color-black-green; }
+.background-black-green { @include set-background-black-green; }
+
+.color-black         { @include set-color-black; }
+.background-black    { @include set-background-black; }
+
+.color-white         { @include set-color-white; }
+.background-white    { @include set-background-white; }
+
+.color-light-grey    { @include set-color-light-grey; }
+.background-light-grey { @include set-background-light-grey; }
+
+.color-grey          { @include set-color-grey; }
+.background-grey     { @include set-background-grey; }
+
+.color-lighter-black { @include set-color-lighter-black; }
+.background-lighter-black { @include set-background-lighter-black; }

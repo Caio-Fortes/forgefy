@@ -1,0 +1,28 @@
+@use '@/scss/_mixins' as *;
+
+#headerContainer {
+  gap: 4rem;
+  padding: 4rem 0rem;
+  @include center-flex;
+
+  @include respond-to(lg) {
+    gap: 1.5rem;
+    a { @include responsive-font(1vw, 1.5vw); }
+  }
+}
+
+.logo {
+  width: 6rem;
+  height: 5rem;
+  z-index: 1;
+
+  @include respond-to(md) {
+    width: 4rem;
+    height: 3rem;
+  }
+}
+
+.lista-horizontal {
+  @include row-flex;
+  gap: 3rem;
+}
