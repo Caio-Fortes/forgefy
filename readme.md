@@ -65,8 +65,4 @@ Com apenas um comando, você já tem:
 ## 📦 Como usar
 
 ```bash
-npx create-forgefy
-
-ou se estiver linkado localmente:
-
-create-forgefy
+npx forgefy
