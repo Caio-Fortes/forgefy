@@ -1,68 +1,79 @@
-# ⚡ FORGE FY CLI
+# 🚀 FORGEFY CLI
 
-> Scaffold rápido e inteligente para iniciar projetos modernos com estrutura profissional
+The **FORGEFY CLI** is a developer tool designed to **accelerate the creation of new projects** by eliminating repetitive setup tasks and providing a standardized, scalable starting point.
 
----
+It enables developers to bootstrap applications with pre-configured environments, best practices, and essential dependencies—reducing setup time and allowing teams to focus on building features instead of configuring infrastructure.
 
-## 🚀 Sobre o projeto
-
-O **FORGE FY CLI** é uma ferramenta criada para **acelerar o início de novos projetos**, eliminando a necessidade de configurar tudo manualmente.
-
-Com apenas um comando, você já tem:
-
-- Estrutura organizada
-- Boas práticas aplicadas
-- Dependências instaladas automaticamente
-- Base pronta para desenvolvimento
-
-👉 A ideia é simples: **você foca no desenvolvimento, o FORGE FY cuida do resto.**
+🔗 Public package: https://www.npmjs.com/package/forgefy
 
 ---
 
-## ⚙️ O que o FORGE FY faz
+## ⚙️ Tech Stack
 
-- Cria projetos usando stacks modernas:
-  - Next.js
-  - Vue (Vite + TypeScript)
-
-- Aplica automaticamente:
-  - Estrutura de pastas escalável
-  - Templates base + específicos por tipo
-  - Configurações iniciais prontas
-
-- Instala dependências conforme o tipo de projeto:
-  - Landing Page
-  - Sistema simples
-  - Sistema robusto
+* **Node.js** (CLI runtime)
+* **JavaScript / TypeScript**
+* **ES Modules (ESM)**
+* **npm ecosystem**
 
 ---
 
-## 🧱 Tipos de projeto
+## 📊 Measurable Results
 
-### 🌐 Landing Page
-- Foco em UI e apresentação
-- Estrutura leve e otimizada
-- Ideal para páginas institucionais
-
-### ⚙️ Sistema simples
-- Base para aplicações com lógica moderada
-- Estrutura organizada e escalável
-
-### 🏗️ Sistema robusto
-- Arquitetura mais completa
-- Inclui libs adicionais (ex: mapas, notificações, etc)
-- Pronto para aplicações mais complexas
+* ⏱️ Reduced project setup time from hours to minutes
+* 🔁 Eliminates repetitive manual configuration
+* 📦 Standardizes project structure across different applications
+* 🚀 Speeds up onboarding for new developers
 
 ---
 
-## 🧪 Stacks suportadas
+## 🧪 Getting Started
 
-- **Next.js (App Router + TypeScript)**
-- **Vue 3 (Vite + TypeScript)**
-
----
-
-## 📦 Como usar
+### 1. Install globally
 
 ```bash
-npx forgefy
+npm install -g forgefy
+```
+
+### 2. Create a new project
+
+```bash
+forgefy
+```
+
+### 3. Follow the interactive CLI
+
+Choose the project type and let Forgefy handle:
+
+* Initial structure
+* Dependencies installation
+* Base configuration
+
+---
+
+## ⚖️ Trade-offs & Limitations
+
+* Focused on predefined templates, which may require customization for specific use cases
+* Limited flexibility compared to fully manual setups
+* Still evolving — new templates and features are continuously being added
+
+---
+
+## 🏗️ Architecture & Design Decisions
+
+FORGEFY CLI was built with a focus on **simplicity, scalability, and developer experience**.
+
+* **Modular architecture**: Each project type (e.g., landing page, simple system, robust system) is handled independently, making it easy to extend
+* **Template-based generation**: Projects are scaffolded using predefined templates to ensure consistency and best practices
+* **Interactive CLI flow**: Improves usability and reduces friction during project creation
+* **ESM-first approach**: Uses modern JavaScript standards for better compatibility with current tooling
+
+The main goal is to provide a **fast, opinionated, and reliable starting point**, while still allowing developers to adapt projects to their specific needs.
+
+---
+
+## 💡 Motivation
+
+This project was created to solve a common developer pain point:
+**wasting time setting up projects from scratch instead of building real solutions.**
+
+FORGEFY aims to turn this process into something **fast, consistent, and scalable**.
